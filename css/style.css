@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+/*共通項目*/
+.contents{
+  width: 1100px;
+  margin: 0 auto;
+}
+.clearfix:after{
+  display:block;
+  content:"";
+  clear: both;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+}
+/*ヘッダー*/
+.header_background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+.header_icon{
+  float: left;
+  font-size: 3em;
+  margin: 15px 0;
+  color: #4e4e4e;
+}
+.contact_botton{
+  float: right;
+  border-radius: 5px;
+  background-color: #74cfae;
+  padding: 14px 12px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #fff;
+  margin: 17.5px 0;
+}
+
+/*コンテンツ*/
+.content_1_background{
+  background-color: #f2f2f2;
+}
+.section_1{
+  text-align: center;
+  padding: 250px 0;
+  margin-top: 78px;
+}
+.h1{
+  font-size: 90px;
+  font-weight: 700;
+  color: #74cfae;
+}
+.content_1_p{
+  font-size: 30px;
+  color: #c0c0c0;
+  margin-top: 20px;
+}
+/*コンテンツ２*/
+.content_2_background{
+  background-color: #74cfae;
+}
+.content_2_inner {
+  display: table;
+  vertical-align: middle;
+  margin: 0 auto;
+}
+.img_table_cell{
+  display: table-cell;
+}
+.second_img_iPhone{
+  padding:50px 0 0 50px;
+/*  display: table-cell;*/
+}
+.content_2_section{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.second_content_h2{
+  font-size: 24px;
+  color:#fff;
+}
+.content_2_p{
+  font-size: 20px;
+  margin:35px 0 0 50px;
+  color: #fff;
+}
+
+/*コンテンツ３*/
+.content_3_background{
+  background-color: #f2f2f2;
+}
+.content_3_h2{
+  text-align: center;
+  padding: 60px 0 40px 0;
+  font-size: 24px;
+  color: grey;
+}
+.content_3_img{
+  margin-left: 100px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.content_3_img:hover{
+  opacity: 1;
+  transition: 0.3s;
+}
+.content_3_img:first-child{
+  margin-left: 0;
+}
+.content_3_all_img{
+  display: flex;
+  justify-content: center;
+}
+.content_3_img_2{
+  margin-top: 80px;
+}
+.content_3_bottom{
+  padding: 90px 0  70px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+.content_3_bottom_p{
+  text-align: center;
+}
+.content_3_bottom_mail{
+  display: block;
+  width: 120px;
+  border-radius: 5px;
+  background-color:  #74cfae;
+  padding: 14px 20px;
+  text-align: center;
+  margin-left: 90px;
+  text-decoration: none;
+}
+.content_3_bottom_mail:hover{
+  color: #fff;
+}
+
+
+/*コンテンツ４*/
+.content_4_background{
+  background-color: #4e4e4e;
+}
+.forth_content{
+  text-align: center;
+}
+.content_4_h2{
+  font-size: 24px;
+  padding: 70px 0;
+}
+.figure_wrap{
+  display:flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.figure{
+  margin-left: 180px;
+}
+.figure:first-child{
+  margin-left: 0;
+}
+.figcaption{
+  font-size: 16px;
+}
+/*　コンテンツ５*/
+.content_5_background{
+  background-color: #f2f2f2;
+}
+.fifth_content{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.icons{
+  width: 185px;
+  padding: 30px 0;
+  margin: 200px 0;
+  font-size: 3em;
+  color: #74cfae;
+  cursor: pointer;
+}
+.icons:hover{
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+/*フッター*/
+.footer_bottom{
+  width: 100%;
+  background-color: #74cfae;
+  text-align: right;
+}
+.footer_text{
+  color: #fff;
+  padding: 20px 0;
+  margin-right: 15%;
+}
