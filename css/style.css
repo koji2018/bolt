@@ -14,17 +14,18 @@ body{
   font-family: 'Raleway', sans-serif;
 }
 /*ヘッダー*/
-.header_background{
+header{
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background-color: #fff;
+  padding: 15px 0 ;
+  z-index: 2;
 }
 .header_icon{
   float: left;
   font-size: 3em;
-  margin: 15px 0;
   color: #4e4e4e;
 }
 .contact_botton{
@@ -35,127 +36,144 @@ body{
   font-size: 12px;
   text-decoration: none;
   color: #fff;
-  margin: 17.5px 0;
+  transition: 0.3s;
 }
-
+.contact_botton:hover{
+  color: #333;
+}
 /*コンテンツ*/
-.content_1_background{
-  background-color: #f2f2f2;
-}
-.section_1{
-  text-align: center;
-  padding: 250px 0;
+main{
   margin-top: 78px;
 }
-.h1{
+.title_content_background{
+  background-color: #f2f2f2;
+}
+.title_content{
+  padding: 250px 0;
+}
+.title_content_inner{
+  text-align: center;
+}
+.title{
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
 }
-.content_1_p{
+.title_content_text{
   font-size: 30px;
   color: #c0c0c0;
   margin-top: 20px;
 }
 /*コンテンツ２*/
-.content_2_background{
+.question_content_background{
   background-color: #74cfae;
 }
-.content_2_inner {
-  display: table;
-  vertical-align: middle;
-  margin: 0 auto;
+.question_content{
+  padding-top: 50px;
 }
-.img_table_cell{
-  display: table-cell;
+.question_content_inner {
+  justify-content: space-between;
+  display: flex;
 }
-.second_img_iPhone{
-  padding:50px 0 0 50px;
-/*  display: table-cell;*/
+.img_iPhone{
+  vertical-align: bottom;
 }
-.content_2_section{
-  display: table-cell;
-  vertical-align: middle;
+.question_content_box{
   text-align: center;
+  width: 700px;
 }
-.second_content_h2{
+.question_content_title{
   font-size: 24px;
   color:#fff;
 }
-.content_2_p{
+.question_content_text{
   font-size: 20px;
-  margin:35px 0 0 50px;
+  margin-top: 35px;
+  line-height: 30px;
   color: #fff;
 }
 
 /*コンテンツ３*/
-.content_3_background{
+.link_content_background{
   background-color: #f2f2f2;
 }
-.content_3_h2{
+.link_content{
+  padding: 60px 0 70px 0;
+}
+.link_content_title{
   text-align: center;
-  padding: 60px 0 40px 0;
   font-size: 24px;
   color: grey;
 }
-.content_3_img{
+.link_content_inner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px
+}
+.img_link{
   margin-left: 100px;
-  opacity: 0.7;
-  cursor: pointer;
 }
-.content_3_img:hover{
-  opacity: 1;
-  transition: 0.3s;
-}
-.content_3_img:first-child{
+.img_link:nth-child(3n+1){
   margin-left: 0;
 }
-.content_3_all_img{
-  display: flex;
-  justify-content: center;
-}
-.content_3_img_2{
+.img_link:nth-child(n+4){
   margin-top: 80px;
 }
-.content_3_bottom{
-  padding: 90px 0  70px 0;
+.link_content_img{
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.link_content_img:hover{
+  opacity: 1;
+}
+.link_content_button{
+  margin-top: 80px;
+}
+.link_content_button{
+  margin-top: 90px;
   display: flex;
   justify-content: center;
   font-size: 12px;
 }
-.content_3_bottom_p{
+.link_content_button_text{
   text-align: center;
+  line-height: 15px;
 }
-.content_3_bottom_mail{
+.link_content_button_mail{
   display: block;
-  width: 120px;
+  width: 100px;
   border-radius: 5px;
   background-color:  #74cfae;
   padding: 14px 20px;
   text-align: center;
   margin-left: 90px;
   text-decoration: none;
-}
-.content_3_bottom_mail:hover{
   color: #fff;
+  transition: 0.3s;
+}
+.link_content_button_mail:hover{
+  color: #333;
 }
 
 
 /*コンテンツ４*/
-.content_4_background{
+.skills_content_background{
   background-color: #4e4e4e;
 }
-.forth_content{
+.skills_content{
   text-align: center;
+  color: #fff;
+  padding: 70px 0 100px 0;
 }
-.content_4_h2{
+.skills_content_title{
   font-size: 24px;
-  padding: 70px 0;
 }
 .figure_wrap{
   display:flex;
+  margin-top: 70px;
   justify-content: center;
-  padding-bottom: 100px;
 }
 .figure{
   margin-left: 180px;
@@ -165,31 +183,32 @@ body{
 }
 .figcaption{
   font-size: 16px;
+  margin-top: 10px;
 }
 /*　コンテンツ５*/
-.content_5_background{
+.sns_content_background{
   background-color: #f2f2f2;
 }
-.fifth_content{
+.sns_content{
   text-align: center;
   display: flex;
   justify-content: center;
+  padding: 200px 0;
 }
 .icons{
   width: 185px;
   padding: 30px 0;
-  margin: 200px 0;
   font-size: 3em;
   color: #74cfae;
   cursor: pointer;
+  transition: 0.3s;
 }
 .icons:hover{
   background-color: #fff;
-  transition: 0.3s;
 }
 
 /*フッター*/
-.footer_bottom{
+footer{
   width: 100%;
   background-color: #74cfae;
   text-align: right;
@@ -197,5 +216,4 @@ body{
 .footer_text{
   color: #fff;
   padding: 20px 0;
-  margin-right: 15%;
 }
