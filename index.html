@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
+    <meta name="title" content="Bolt - Free Bootstrap 3 Theme">
+    <meta name="description" content="This is my portfollio site">
+    <meta name="keyword" content="bolt, bootstrap, portfollio">
     <title>Bolt - Free Bootstrap 3 Theme</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
@@ -14,12 +17,23 @@
   </head>
   <body>
     <header class="header">
-      <div class="contents clearfix">
+      <div class="contents header_inner clearfix">
         <div class="header_icon">
           <i class="fa fa-bolt" aria-hidden="true"></i>
         </div>
         <div class="header_contact_button">
           <a href="" class="contact_button">Contact</a>
+          <button type="button" id="humburger_menu" class="header_hamburger_menu" onclick="clickMenu()">
+            <div class="humburger_line humburger_line_top"></div>
+            <div class="humburger_line humburger_line_middle"></div>
+            <div class="humburger_line humburger_line_buttom"></div>
+          </button>
+        </div>
+      </div>
+      <div  id="humburger_menu_contact_button">
+        <div class="humburger_button_line"></div>
+        <div class="humburger_contact_button">
+          <a href="" class="humburger_contact_button_long">Contact</a>
         </div>
       </div>
     </header>
@@ -34,7 +48,7 @@
   <!-- コンテンツ２ -->
       <article class="question_content_background">
         <div class="contents question_content">
-            <img class="question_content_img_iPhone" style="vertical-align: bottom;" src="./img/iphone.png">
+            <img class="question_content_img_iPhone" src="./img/iphone.png">
             <div class="question_content_box">
               <h2 class="question_content_title">WHAT WE CAN DO?</h2>
               <p class="question_content_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -48,22 +62,22 @@
           <h2 class="link_content_title">OUR LATEST WORK</h2>
           <div class="link_content_inner">
             <a href="" class="img_link">
-              <img class="link_content_img" style="vertical-align: bottom;" src="./img/01.jpg">
+              <img class="link_content_img" src="./img/01.jpg">
             </a>
             <a href="" class="img_link">
-              <img class="link_content_img" style="vertical-align: bottom;" src="./img/02.jpg">
+              <img class="link_content_img" src="./img/02.jpg">
             </a>
             <a href="" class="img_link">
-              <img class="link_content_img" style="vertical-align: bottom;" src="./img/03.jpg">
+              <img class="link_content_img" src="./img/03.jpg">
             </a>
             <a href="" class="img_link">
-              <img class="link_content_img" style="vertical-align: bottom;" src="./img/04.jpg">
+              <img class="link_content_img" src="./img/04.jpg">
             </a>
             <a href="" class="img_link">
-              <img class="link_content_img" style="vertical-align: bottom;" src="./img/05.jpg">
+              <img class="link_content_img" src="./img/05.jpg">
             </a>
             <a href="" class="img_link">
-              <img class="link_content_img" style="vertical-align: bottom;" src="./img/06.jpg">
+              <img class="link_content_img" src="./img/06.jpg">
             </a>
           </div>
           <div class="link_content_button">
@@ -73,24 +87,25 @@
         </div>
       </section>
   <!-- コンテンツ４ -->
+
       <section class="skills_content_background">
         <div class="contents skills_content">
           <h2 class="skills_content_title">OUR SKILLS</h2>
           <div class="figure_wrap">
             <figure class="skills_content_imgs">
-              <img class="skills_content_img" style="vertical-align: bottom;" src="./img/circle_01.png">
+              <img class="skills_content_img" src="./img/circle_01.png">
               <figcaption class="figcaption">JavaScript</figcaption>
             </figure>
             <figure  class="skills_content_imgs">
-              <img class="skills_content_img" style="vertical-align: bottom;" src="./img/circle_02.png">
+              <img class="skills_content_img" src="./img/circle_02.png">
               <figcaption class="figcaption">Bootstrap</figcaption>
             </figure>
             <figure class="skills_content_imgs">
-              <img class="skills_content_img" style="vertical-align: bottom;" src="./img/circle_03.png">
+              <img class="skills_content_img" src="./img/circle_03.png">
               <figcaption class="figcaption">WordPress</figcaption>
             </figure>
-            <figure class="skills_content_img">
-              <img class="skills_content_img" style="vertical-align: bottom;" src="./img/circle_04.png">
+            <figure class="skills_content_imgs">
+              <img class="skills_content_img" src="./img/circle_04.png">
               <figcaption class="figcaption">Photoshop</figcaption>
             </figure>
           </div>
