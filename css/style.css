@@ -10,7 +10,10 @@
   content:"";
   clear: both;
 }
-.
+img{
+  vertical-align: bottom;
+}
+
 body{
   font-family: 'Raleway', sans-serif;
 }
@@ -24,7 +27,7 @@ body{
   z-index: 2;
 }
 .header_inner{
-padding: 15px 0 ;
+  padding: 15px 0 ;
 }
 .header_icon{
   float: left;
@@ -122,7 +125,6 @@ padding: 15px 0 ;
 .link_content_img{
   opacity: 0.7;
   transition: 0.3s;
-  vertical-align: bottom;/*画像の隙間*/
 }
 .link_content_img:hover{
   opacity: 1;
@@ -206,7 +208,7 @@ padding: 15px 0 ;
 }
 
 /*フッター*/
-footer{
+.footer{
   width: 100%;
   background-color: #74cfae;
   text-align: right;
@@ -220,223 +222,224 @@ footer{
 /*画面サイズ767px以上、1199px以下のの時*/
 
 @media screen and (min-width:767px) and (max-width:1199px){
-.contents{
-  width: 97%;
-  margin: 0 auto;
-}
+  .contents{
+    width: 97%;
+    margin: 0 auto;
+  }
 /*コンテンツ２*/
-.question_content{
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 25px;
-}
-.question_content_title{
-  margin-top: 20px;
-}
-.question_content_img_iPhone{
-  width: 25%;
-  margin: 0 auto;
-  padding-left: 0px;
-}
-.question_content_box{
-  margin: 0 auto;
-  width: 768px;
-}
+  .question_content{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+  }
+  .question_content_title{
+    margin-top: 20px;
+  }
+  .question_content_img_iPhone{
+    width: 25%;
+    margin: 0 auto;
+    padding-left: 0px;
+  }
+  .question_content_box{
+    margin: 0 auto;
+    width: 768px;
+  }
 /*コンテンツ３*/
-.link_content_inner{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px
-}
-.img_link{
-  margin-left: 0;
-}
-.img_link:nth-child(n+4){
-  margin-top: 0;
-}
-.img_link:nth-child(4){
-  margin-top: 80px;
-}
-.link_content_button{
-  margin-top: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.link_content_button_mail{
-  margin-top: 40px;
-  margin-left: 0;
-}
+  .link_content_inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px
+  }
+  .img_link{
+    margin-left: 0;
+  }
+  .img_link:nth-child(n+4){
+    margin-top: 0;
+  }
+  .img_link:nth-child(4){
+    margin-top: 80px;
+  }
+  .link_content_button{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .link_content_button_mail{
+    margin-top: 40px;
+    margin-left: 0;
+  }
 
 /*コンテンツ４*/
-.figure_wrap{
-  display:flex;
-  flex-direction: column;
-  margin-top: 70px;
-}
-.skills_content_imgs{
-  margin:88px 0 0;
-}
-.skills_content_imgs:first-child{
-  margin-top: 0;
-}
-
+  .figure_wrap{
+    display:flex;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+  .skills_content_imgs{
+    margin:88px 0 0;
+  }
+  .skills_content_imgs:first-child{
+    margin-top: 0;
+  }
 }
 
 /*画面サイズが776px以下の時*/
 @media screen and (max-width: 766px){
-.contents{
-  width: 97%;
-}
+  .contents{
+    width: 97%;
+  }
 
-  /*ヘッダー*/
+/*ヘッダー*/
 /*コンタクトボタン　消去*/
+  .contact_button{
+    display: none;
+  }
 
-.contact_button{
-  display: none;
-}
+  /*ハンバーガーメニュー　*/
+  .header_hamburger_menu{
+    float: right;
+    position: relative;
+    height: 36px;
+    width: 42px;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  .humburger_line{
+    position: absolute;
+    left: 11px;
+    height: 2px;
+    width: 18px;
+    background-color: #ddd;
+    border-radius: 2px;
+    display: inline-block;
+    box-sizing: border-box;
+  }
+  .humburger_line_top:nth-of-type(1){
+    top: 10px;
+  }
+  .humburger_line_middle:nth-of-type(2){
+    top:16px;
+  }
+  .humburger_line_buttom:nth-of-type(3){
+   bottom: 10px
+  }
 
-/*ハンバーガーメニュー　*/
-.header_hamburger_menu{
-  float: right;
-  position: relative;
-  height: 36px;
-  width: 42px;
-  display: inline-block;
-  box-sizing: border-box;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 10px;
-}
-.humburger_line{
-  position: absolute;
-  left: 11px;
-  height: 2px;
-  width: 18px;
-  background-color: #ddd;
-  border-radius: 2px;
-  display: inline-block;
-  box-sizing: border-box;
-}
-.humburger_line_top:nth-of-type(1){
-  top: 10px;
-}
-.humburger_line_middle:nth-of-type(2){
-  top:16px;
-}
-.humburger_line_buttom:nth-of-type(3){
- bottom: 10px
-}
-
-.humburger_button_line{
-  width: 100%;
-  border: 1px solid #eee;
-  margin-bottom: 5px;
-}
+  .humburger_button_line{
+    width: 100%;
+    border: 1px solid #eee;
+    margin-bottom: 5px;
+  }
 /*ハンバーガーコンタクトボタン*/
-.humburger_contact_button{
-  border-radius: 1px;
-  background-color: #74cfae;
-  padding: 14px 12px;
-  font-size: 12px;
-  color: #fff;
-  transition: 0.3s;
-}
-.humburger_contact_button:hover{
-  color: #333;
-}
-.humburger_contact_button_long{
-  text-decoration: none;
-}
+  .humburger_contact_button{
+    border-radius: 1px;
+    background-color: #74cfae;
+    padding: 14px 12px;
+    font-size: 12px;
+    color: #fff;
+    transition: 0.3s;
+  }
+  .humburger_contact_button:hover{
+    color: #333;
+  }
+  .humburger_contact_button_long{
+    text-decoration: none;
+  }
 /*コンテンツ１*/
 
-.title_content{
-  padding: 160px 0 130px;
-}
-.title{
-  font-size: 80px;
-}
+  .title_content{
+    padding: 160px 0 130px;
+  }
+  .title{
+    font-size: 80px;
+  }
 
-/*コンテンツ２*/
-.question_content{
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 25px;
-}
-.question_content_title{
-  margin-top: 20px;
-}
-.question_content_img_iPhone{
-  width: 50%;
-  margin: 0 auto;
-  padding-left: 0;
-}
-.question_content_box{
-  width:100%;
-}
+  /*コンテンツ２*/
+  .question_content{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+  }
+  .question_content_title{
+    margin-top: 20px;
+  }
+  .question_content_img_iPhone{
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  .question_content_box{
+    width:100%;
+  }
 /*コンテンツ3*/
-.img_link{
-  margin-left: 0;
-}
-.link_content_inner{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px
-}
-.img_link:nth-child(n+4){
-  margin-top: 0;
-}
-.img_link:nth-child(4){
-  margin-top: 80px;
-}
-.link_content_button{
-  margin-top: 90px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.link_content_button_mail{
-  margin-top: 40px;
-  margin-left: 0;
-}
+  .img_link{
+    margin-left: 0;
+  }
+  .link_content_inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px
+  }
+  .img_link:nth-child(n+4){
+    margin-top: 0;
+  }
+  .img_link:nth-child(4n){
+    margin-top: 80px;
+  }
+  .link_content_button{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .link_content_button_mail{
+    margin-top: 40px;
+    margin-left: 0;
+  }
 
 /*コンテンツ４*/
-.figure_wrap{
-  display:flex;
-  flex-direction: column;
-  margin-top: 70px;
-}
-.skills_content_imgs{
-  margin:88px 0 0;
-}
-.skills_content_imgs:first-child{
-  margin-top: 0;
-}
+  .figure_wrap{
+    display:flex;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+  .skills_content_imgs{
+    margin:88px 0 0;
+  }
+  .skills_content_imgs:first-child{
+    margin-top: 0;
+  }
 /*コンテンツ５*/
-.sns_content{
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 50px 15px;
-  box-sizing: border-box;
-}
-.icons{
-  width: 100%;
-}
+  .sns_content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 15px;
+    box-sizing: border-box;
+  }
+  .icons{
+    width: 100%;
+  }
 
 }
 
 @media screen and (min-width: 767px){
-.humburger_contact_button{
-  display: none;
-}
-.humburger_botton_line{
-  display: none;
+  .humburger_contact_button{
+    display: none;
+    }
+  .humburger_botton_line{
+    display: none;
+    }
+  .header_hamburger_menu{
+    display: none;
 }
 }

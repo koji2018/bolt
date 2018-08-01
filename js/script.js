@@ -3,12 +3,12 @@ document.getElementById("humburger_menu_contact_button").style.display ="none";
 
 
 function clickMenu(){
-  var str = document.getElementById("humburger_menu_contact_button");
-  console.log(str);
+  var menuButton = document.getElementById("humburger_menu_contact_button");
+  console.log(menuButton);
 
-  if(str.style.display == "none") {
-    str.style.display = "block";
+  if(menuButton.style.display == "none") {
+    menuButton.style.display = "block";
   } else {
-    str.style.display = "none";
+    menuButton.style.display = "none";
   }
 }
