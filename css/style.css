@@ -429,7 +429,6 @@ body{
   .icons{
     width: 100%;
   }
-
 }
 
 @media screen and (min-width: 767px){
@@ -441,5 +440,5 @@ body{
     }
   .header_hamburger_menu{
     display: none;
-}
+  }
 }
